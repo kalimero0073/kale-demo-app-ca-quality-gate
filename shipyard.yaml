@@ -1,0 +1,15 @@
+apiVersion: "spec.keptn.sh/0.2.3"
+kind: "Shipyard"
+metadata:
+  name: "kale-quality-gate-demo"
+spec:
+  stages:
+    - name: "dev"
+      sequences:
+        - name: "deploy"
+          tasks:
+            # Other tasks here like tests, security scans, etc.
+            - name: "evaluation"
+              properties: 
+                timeframe: 1m
+            # Other tasks here like deployments
