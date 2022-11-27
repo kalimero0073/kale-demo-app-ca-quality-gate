@@ -26,13 +26,11 @@ objectives:
       key_sli: false
     - sli: throughput
       displayName: ""
-      pass: 
-        - criteria:
-            - >5
+      pass: []
       warning: 
         - criteria:
             - <=500
-      weight: 0
+      weight: 1
       key_sli: false
 total_score:
     pass: 90%
